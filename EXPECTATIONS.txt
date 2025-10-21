@@ -3,7 +3,7 @@
 Course: Univelcity, Backend with Python & Django  
 Date Started Classes: September 30 2025  
 Cohort: Foxtrot Cohort  
-Learner: Cosmas Onyekwelu  
+Learner:  
 
 ---
 

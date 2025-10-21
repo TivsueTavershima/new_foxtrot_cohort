@@ -43,7 +43,3 @@ It documents my **daily learning journey** as I move from beginner to python bac
 
 ---
 
-## 📫 Connect
-
-- Portfolio: [cosmasonyekwelu.github.io](https://cosmasonyekwelu.github.io)
-- GitHub: [@cosmasonyekwelu](https://github.com/cosmasonyekwelu)

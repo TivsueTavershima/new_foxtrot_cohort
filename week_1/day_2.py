@@ -1,144 +1,109 @@
-# Data Structures in Python.
-# Data structures are used to store multiple values in a single variable.
-# There are four built-in data structures in Python: List, Tuple, Set, Dictionary.
+# This is a single line comment used for documentation.
 
 '''
-dictionary
-list
-tuple
-set
+This is a multi-line comment
+   that spans multiple lines
+    and is often used for documentation.
 '''
-# Dictionary
-person = {
-    "first_name": "Justice",
-    "last_name": "Rivers",
-    "age": 28,
-    "gender": "Male",
-    "profession": "Pet Engineer", "tags": ["a, ab"],
-    "nationality": {
-        "nation": "Nigeria",
-        "nin": 3456789023,
-        "tax": "all paid in full"
-    }
-}
-# print(type(person))
+
+# Variables and Data Types
+bottle = "water"
+
+# data types
+
+"qwerty1234567890@#$%^&*()_+"  # string
+
+1234567890  # integer
+
+123.4567890  # float
+
+True  # boolean
+False  # boolean
+
+first_name = "Cosmas"  # snake case
+
+world = "Hello World!"  # string variable
+
+print(world)  # print function to display output
+
+# Arithmetic Operator
 '''
-print(
-    person["age"]
-)
++  Addition(Datatype - Integer, Floats, String)
+-  Subtraction(Datatype - Integer, Floats, String)
+*  Multiplication(Datatype - Integer, Floats)
+ /  Division(Datatype - Integer, Floats)
+ // Floor Division(for rounding down values) (Datatype - Integer, Floats)
+'''
+
+addition = 12 + 12  # Addition
+
+concatenation = "Hello" + " " + "Cosmas"  # String Concatenation
+
+repetition = "Hurray" * 3  # String Repetition
+
+first_number = 4
+second_number = 6
+
+# Addition
+add = first_number + second_number
+
+# Subtraction
+subtract = first_number - second_number
+
+# Multiplication
+multiply = first_number * second_number
+
+# Division
+divide = first_number / second_number
+
+
+print("Addition:", add)
+print("Subtraction:", subtract)
+print("Multiplication:", multiply)
+print("Division:", divide)
+
+print("Addition:", add, "Type:", type(add))
+print("Subtraction:", subtract, "Type:", type(subtract))
+print("Multiplication:", multiply, "Type:", type(multiply))
+print("Division:", divide, "Type:", type(divide))
+
+
+# Casting - Changing one data type to another data type
 
 '''
-introduction = f"Hello {person["first_name"]} {person["last_name"]} from {person["nationality"]["nation"]}. It's nice to meet You"
-# print(introduction)
+int() - convert to integer(string, float)-provided the fact that the characters are numbers
+str() - convert to string(integer, boolean, float)
+float() - convert to float (integer, string)-provided the fact that the characters are numbers
+bool() - boolean("string")
 
-# Update or Reassign values in keys
-person["profession"] = "Software Engineer"
-
-# Assign new key with a value in a dictionary
-person["club"] = "Liverpool"
-
-# Delete a key
-del person["gender"]
-
-# searches if the firstname is in the dictionary
-get_first_name = person.get("first_name")
-# searches if the firstname is in the dictionary, If not return the value Adams
-get_first_name_or_return = person.get("first_name", "Adam")
-
-# person.pop("age", "Age not found")  # removes a key with its value
-
-# person.clear()  # Removes the entire key  with its dictionary
-
-# print(person)
-
-# List
-datas = ["paul", 22, False, 14.5, person, [1, 2, 3, 4, 5]]
-# print(type(datas))
 '''
-print(
-    datas[4]["nationality"]["nin"]
-)
-'''
-datas[0] = "John"
 
-del datas[5]
+# converting addition to a string
+convert_to_string = str(add)
+print("Converting addition to string:",
+      convert_to_string, type(convert_to_string))
 
-# print(datas)
+# converting subtraction to a float
+convert_to_float = float(subtract)
+print("Converting subtraction to float:",
+      convert_to_float, type(convert_to_float))
 
-concat = [1, 2, 3, 4, 5] + [6, 7, 8, 9, 0]  # Concatenation
+# converting multiplication to a boolean
+convert_to_boolean = bool(multiply)
+print("Converting multiplication to boolean:",
+      convert_to_boolean, type(convert_to_boolean))
 
-is_in_datas = 48 in datas  # Membership
+# converting divide to an integer
+convert_to_int = int(divide)
+print("Converting divide to integer:",
+      convert_to_int, type(convert_to_int))
 
-daniel_bryan = ["Yes"] * 4  # Repetition
-# print(daniel_bryan)
+# Re-assigning a variable
+nationality = "United States Of America"
+nationality = "Nigerian"
+nationality = "France"
+print(nationality)
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-numbers.append(11)  # Add at the end
-numbers.insert(5, 100)  # Add a data to a particular index
-numbers.pop(6)  # Removes items from the list through index
-numbers.remove(0)  # Removes items from the list through values
-# print(numbers)
-
-# Simple Classwork
-
-nested_number = [2, 46, 33, 1, 6, 3, ["twenty", "Yes", 5,
-                                      6, {"another": [3, 55, 6, "middle", 17]}, 7], 55, 2, 4]
-# Locate yes
-# print(nested_number[6][1])
-
-# Add "end" to the list of another
-# nested_number[6][4]["another"].append("end")
-# print(nested_number)
-
-# Delete the number 7
-# nested_number[6].remove(7)
-# print(nested_number)
-
-# or
-
-# del nested_number[6][5]
-# print(nested_number)
-
-# Tuples
-colors = ("red", "blue", "yellow", "red")  # Immutable
-# print(colors)
-
-# colors[0] ="Orange" will not work because it is immutable
-
-repeat = colors * 2
-# print(repeat)
-
-membership = "blue" in colors
-# print(membership)
-
-concat_tuple = colors + ("orange", "green", "purple")
-# print(concat_tuple)
-
-color_count = colors.count("red")
-# print(color_count)
-
-# del colors[0] will not work because it is immutable
-# print(colors[3])
-
-# Sets is a collection of unordered items
-# In Python, sets are mutable, un-indexed and do not contain duplicates.
-# The order of elements in a set is not preserved and can change.
-
-top_4_clubs = {"Arsenal", "Liverpool", "Tottenham", "Bouremouth"}
-# print(top_4_clubs)
-regulars = {"Fullham", "Bouremouth", "Burnley", "Wolves"}
-# print(regulars)
-
-# top_4_clubs.clear() # Clear values out of sets
-
-# common value between set (short cut &)
-intersect = top_4_clubs.intersection(regulars)
-# print(intersect)
-union = top_4_clubs.union(regulars)  # join sets (short cut |)
-# print(union)
-
-# Not common values between sets (short cut -)
-difference = top_4_clubs.difference(regulars)
-print(difference)
-
-
+introduction = "Hello, My name is " + " " + \
+    first_name + " I am from " + " " + nationality
+print(introduction)

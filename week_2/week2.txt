@@ -1,3 +1,6 @@
+
+---
+
 ## 🐍 Week 2: Python Fundamentals — Comparison, Logical Operators, Strings & Data Structures
 
 ### 📅 Day 1: Comparison Operators, Logical Operators, and Strings

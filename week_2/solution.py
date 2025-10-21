@@ -5,38 +5,29 @@
 
 
 # No 1 answer here
-stored_value = 5
-search_value = 3
+x = 2
+y = 4
 
-equal_to = 5 == 3
-print("equal to:", search_value)
+# Example 1
+compare_1 = x == y
 
-not_equal_to = 5 != 3
-print("not equal to:", search_value)
+# Example 2
+compare_2 = x > y
 
-less_than = 5 < 3
-print("lees than:", search_value)
-
-greater_than = 5 > 3
-print("greater than:", search_value)
-
-graeter_than_and_equal_to = 5 >= 3
-print("greater than and equal to:", search_value)
-
-less_than_and_equal_to = 5 <= 3
-print("less than and equal to:", search_value)
+# Example 2
+compare_3 = x <= y
 
 
 # 2. Create two variables: stored_value = 12 and search_input = 12.
 #    Check if they are equal and print the result.
 
-
 # No 2 answer here
 stored_value = 12
-search_value = 12
+search_input = 12
 
-equal_to = 12 == 12
-print("equal to:", search_value)
+is_equal = stored_value == search_input
+print(is_equal)
+
 
 # 3. Use comparison operators to check:
 #    - if 5 is greater than 10
@@ -45,10 +36,11 @@ print("equal to:", search_value)
 
 
 # No 3 answer here
+is_greater = 5 > 10
+is_less_than_or_equal_to = 10 < 20
+print(is_greater)
+print(is_less_than_or_equal_to)
 
-compare= 5 > 10
-compare = 15 <= 20
-print(compare,compare)
 
 # 4. Use logical operators to check:
 #    - if a person's age is greater than or equal to 18 AND if they have a driver's license.
@@ -57,15 +49,12 @@ print(compare,compare)
 #    license = "yes"
 #    Print the result of the comparison.
 
-
 # No 4 answer here
-
 age = 20
-licence = "yes"
+license = "yes"
 
-is_driver_licence = age >= 18 and licence
-print(is_driver_licence)
-
+is_drivers_licence = age >= 18 and license
+print(is_drivers_licence)
 
 
 # 5. Use OR (||) to check if one of these is true:
@@ -75,12 +64,11 @@ print(is_driver_licence)
 #    Print the result.
 
 # No 5 answer here
-
 temperature = 35
-raining = 'false'
+raining = False
 
-one_is_true = temperature or raining == True
-print(one_is_true)
+is_one_true = temperature > 30 or raining
+print(is_one_true)
 
 # 6. Use NOT to flip the value of a variable:
 #    Example:
@@ -88,9 +76,9 @@ print(one_is_true)
 #    Use NOT to make it True and print both values.
 
 # No 6 answer here
-are_you_okay = 'false'
-negate_value = not are_you_okay
-print("not",negate_value)
+is_tired = False
+negate = not is_tired
+
 
 # 7. Create 4 string variables:
 #    - One using single quotes
@@ -100,21 +88,19 @@ print("not",negate_value)
 #    Print all of them.
 
 # No 7 answer here
-valuable1 = 'hello'
-valuable2 = "hi"
-valuable3 = '''how are you'''
-valuable4 = """i'm fine"""
-print(valuable1,valuable2,valuable3,valuable4)
+str1 = 'single quote'
+str2 = "double quote"
+str3 = ''' triple singe quote'''
+str4 = """triple double quote"""
+print(str1, str2, str3, str4)
 
 
 # 8. Write a sentence that uses \n for a new line and \t for a tab space.
 #    Print it and see how it looks.
 
 # No 8 answer here
-
-sentence = "hello sir, \n\thow are you"
-print(sentence)
-
+letter = "Hello Sir,\n\tI want to express my gratitude."
+print(letter)
 
 # 9. Use string methods:
 #    - Make a string called name = " miracle "
@@ -125,20 +111,15 @@ print(sentence)
 
 
 # No 9 answer here
+name = " miracle "
+remove_spaces = name.strip()
+to_upper = name.upper()
+to_lower = name.lower()
 
-name = ' Miracle '
-remove_space = name.strip()
 print(name)
-
-upper_case = name.upper()
-print(upper_case)
-
-lower_case = name.lower()
-print(lower_case)
-
-
-
-
+print(remove_spaces)
+print(to_upper)
+print(to_lower)
 
 # 10. Do the following with strings:
 #     - Concatenate two strings, for example: "Python" + " Programming"
@@ -148,14 +129,12 @@ print(lower_case)
 
 
 # No 10 answer here
-val = 'python'
-val1 = 'programming'
+str5 = "Hello"
+str6 = "World"
 
-concat = "python " + "programe"
+concat = str5 + " " + str6
+interpolation = f"My first text word in programming is {str5} {str6}"
+repitition = str5 * 3
 print(concat)
-
-print(f"my first test in {val} {val1}")
-
-me = name * 3
-print(me)
-
+print(interpolation)
+print(repitition)

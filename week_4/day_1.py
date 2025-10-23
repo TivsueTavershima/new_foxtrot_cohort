@@ -14,7 +14,7 @@ def addition():  # Function definition
     num_1 = 1  # The input to the function
     num_2 = 2
     sum = num_1 + num_2
-    return sum  # The value you want to return
+    return sum   # returns the value you want to return
 
     num = 3  # Unreachable code after return statement
 

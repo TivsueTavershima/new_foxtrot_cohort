@@ -42,7 +42,7 @@ print(is_less_equal)
 #    Print the result of the comparison.
 
 # No 4 answer here
-age = 24
+age = 20 >= 18
 driver_license = "yes"
 valid_driver = age >= 18 and driver_license == "yes"
 print(valid_driver)
@@ -98,7 +98,7 @@ print(triple_double)
 #    Print it and see how it looks.
 
 # No 8 answer here
-print("Hello!\n My name is Cosmas. \tWelcome to Python Backend class.")
+print("Hello!\n My name is Taver. \tWelcome to Python Backend class.")
 
 
 # 9. Use string methods:
@@ -128,7 +128,7 @@ print(lower_name)
 text_one = "Python"
 text_two = " Programming"
 print(text_one + text_two)
-my_name = "Cosmas"
+my_name = "taver"
 print(f"My name is {my_name}")
 School = "Univelcity"
 print(School * 3)

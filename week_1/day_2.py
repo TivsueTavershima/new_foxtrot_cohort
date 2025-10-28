@@ -20,7 +20,7 @@ bottle = "water"
 True  # boolean
 False  # boolean
 
-first_name = "Cosmas"  # snake case
+first_name = "Taver"  # snake case
 
 world = "Hello World!"  # string variable
 
@@ -29,8 +29,8 @@ print(world)  # print function to display output
 # Arithmetic Operator
 '''
 +  Addition(Datatype - Integer, Floats, String)
--  Subtraction(Datatype - Integer, Floats, String)
-*  Multiplication(Datatype - Integer, Floats)
+-  Subtraction(Datatype - Integer, Floats,)
+*  Multiplication(Datatype - Integer, Floats, string)
  /  Division(Datatype - Integer, Floats)
  // Floor Division(for rounding down values) (Datatype - Integer, Floats)
 '''

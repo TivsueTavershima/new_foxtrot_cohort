@@ -20,16 +20,16 @@ person = {
         "nin": 3456789023,
         "tax": "all paid in full"
     }
-}
-# print(type(person))
-'''
+} 
+print(type(person))
+
 print(
     person["age"]
 )
 
-'''
+
 introduction = f"Hello {person["first_name"]} {person["last_name"]} from {person["nationality"]["nation"]}. It's nice to meet You"
-# print(introduction)
+print(introduction)
 
 # Update or Reassign values in keys
 person["profession"] = "Software Engineer"
@@ -54,16 +54,16 @@ get_first_name_or_return = person.get("first_name", "Adam")
 # List
 datas = ["paul", 22, False, 14.5, person, [1, 2, 3, 4, 5]]
 # print(type(datas))
-'''
+
 print(
     datas[4]["nationality"]["nin"]
 )
-'''
+
 datas[0] = "John"
 
-del datas[5]
+del datas[4]
 
-# print(datas)
+print(datas)
 
 concat = [1, 2, 3, 4, 5] + [6, 7, 8, 9, 0]  # Concatenation
 
@@ -77,7 +77,7 @@ numbers.append(11)  # Add at the end
 numbers.insert(5, 100)  # Add a data to a particular index
 numbers.pop(6)  # Removes items from the list through index
 numbers.remove(0)  # Removes items from the list through values
-# print(numbers)
+print(numbers)
 
 # Simple Classwork
 
@@ -101,7 +101,7 @@ nested_number = [2, 46, 33, 1, 6, 3, ["twenty", "Yes", 5,
 
 # Tuples
 colors = ("red", "blue", "yellow", "red")  # Immutable
-# print(colors)
+print(colors)
 
 # colors[0] ="Orange" will not work because it is immutable
 
@@ -112,10 +112,10 @@ membership = "blue" in colors
 # print(membership)
 
 concat_tuple = colors + ("orange", "green", "purple")
-# print(concat_tuple)
+print(concat_tuple)
 
 color_count = colors.count("red")
-# print(color_count)
+print(color_count)
 
 # del colors[0] will not work because it is immutable
 # print(colors[3])

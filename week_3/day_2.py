@@ -64,7 +64,7 @@ print(first_num)
 
 # Next  task
 
-"""
+'''
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 updated = []
 for num in numbers:
@@ -73,11 +73,9 @@ for num in numbers:
 else:
     print("Numbers:", numbers)
     print("Updated Numbers:", updated)
-"""
-
+'''
 # Next task
-
-"""
+'''
 people = ["John", "Peter", "Ade", "Oluadamilare", "King"]
 email_users = []
 
@@ -86,10 +84,10 @@ for person in people:
     email_users.append(email_address)
 else:
     print(email_users)
-"""
+'''
 
 # Next
-"""
+'''
 people = ["John", "Peter", "Ade", "Oluadamilare", "King"]
 name = input("Who do you want to delete: ")
 for person in people:
@@ -99,7 +97,7 @@ for person in people:
         break
 else:
     print("The person is not found.")
-"""
+'''
 
 # Using strip for white spaces
 """

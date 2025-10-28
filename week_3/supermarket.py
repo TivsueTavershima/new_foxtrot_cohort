@@ -3,6 +3,7 @@ sales = [
     {"name": "King", "item": "Bread"},
     {"name": "Peter", "item": "Milk"}
 ]
+
 print(f"{"==" * 24}\nWelcome to Moku Supermarket\n{"==" * 24}")
 name = input("Please tell us your name:")
 user_item = input(

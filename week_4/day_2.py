@@ -130,7 +130,7 @@ def my_decorator(func):
     return wrapper
 
 
-@my_decorator
+my_decorator
 def say_hello():
     print("Hello Team!")
 

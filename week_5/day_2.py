@@ -34,7 +34,7 @@ class footballer:
   
   #--instance attribute --
   def __init__(self,name, age, role):  # constructor
-    self.name = "tavershima"
+    self.name = name
     self.age = age
     self.role = role
   

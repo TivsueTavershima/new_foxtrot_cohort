@@ -1,7 +1,11 @@
 
-
 from register import Register
 from deposit import Deposit
+from withdraw import Withdraw
+from view_balance import ViewBalance
+from transfer import Transfer
+
+
 
 class Main:
     def __init__(self, name, founded):
@@ -11,6 +15,9 @@ class Main:
         #Composition
         self.register = Register()
         self.deposit = Deposit()
+        self.withdraw = Withdraw()
+        self.view_balance = ViewBalance()
+        self.transfer = Transfer()
 
     def run(self):
         print(f"{"~~" * 24}\nWelcome to {self.name}. What do you want to do today?\n{"~~" * 24}")

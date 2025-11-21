@@ -5,9 +5,10 @@ sales = [
 ]
 
 print(f"{"==" * 24}\nWelcome to Moku Supermarket\n{"==" * 24}")
-name = input("Please tell us your name:")
+name = input("Please tell us your name: ")
 user_item = input(
-    f"Hello{name}. What do you want to buy?\n{items}\nWrite the name of what you want:")
+    f"Hello {name}. \nWhat do you want to buy?\nWe have {items}\nWrite the name of what you want:").upper()
+print("")
 
 if user_item in items:
     option = input(

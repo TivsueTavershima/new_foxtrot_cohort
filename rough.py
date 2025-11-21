@@ -32,4 +32,20 @@ class Main:
     # Static method
     @staticmethod
     def utility():
-        pass
+        passpython_data = {
+    "name": "Alice",
+    "age": 30,
+    "isStudent": False,
+    "courses": ["Math", "Science"]
+}
+
+# Convert Python dictionary to JSON string
+json_string = json.dumps(python_data, indent=4)
+print("JSON String:")
+print(json_string)
+
+# Convert JSON string back to Python dictionary
+decoded_data = json.loads(json_string)
+print("\nDecoded Python Dictionary:")
+print(decoded_data)
+print(f"Type of decoded_data: {type(decoded_data)}")

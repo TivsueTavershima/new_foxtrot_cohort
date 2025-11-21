@@ -1,11 +1,8 @@
-
 from register import Register
 from deposit import Deposit
 from withdraw import Withdraw
 from view_balance import ViewBalance
 from transfer import Transfer
-
-
 
 class Main:
     def __init__(self, name, founded):
@@ -22,7 +19,8 @@ class Main:
     def run(self):
         print(f"{"~~" * 24}\nWelcome to {self.name}. What do you want to do today?\n{"~~" * 24}")
         while True:
-            options = input("1. Create an account.\n2. Deposit money\n3. Withdraw money. \n4. View balance.\n5. Exit.\nChoose(1|2|3|4):")
+            options = input("1. Create an account.\n2. Deposit money\n3. Withdraw money. \n4. View balance.\n5. Transfer money.\n6. Exit.\nChoose(1|2|3|4):")
+
 
             match options:
                 case "1":
@@ -30,10 +28,12 @@ class Main:
                 case "2":
                     self.deposit.run()
                 case "3":
-                    print(2)
+                    self.withdraw.run()
                 case "4":
-                    print(3)
+                    self.view_balance.run()
                 case "5":
+                    self.transfer.run()
+                case "6":
                     break
                 case _:
                     print("Wrong option. Choose between 1 to 4.")

@@ -15,7 +15,3 @@ class Register(Model):
 
         user = {"name": name, "email": email, "account_number": account_no, "account_balance": 0}
         self.accounts.append(user)
-
-        self.save_a_file(name_of_file="store.json", content=self.accounts)
-
-        print(f"{"==" * 24}\nYour account is created.\nYour account number is {account_no}\n{"==" * 24}")

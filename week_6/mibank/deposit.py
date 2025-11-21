@@ -9,10 +9,10 @@ class Deposit(Model):
     def run(self):
             account_no = input("What is your account number: ")
 
-            for users in self.accounts:
-                if int(account_no) == users['account_number']:
+            for user in self.accounts:
+                if int(account_no) == user['account_number']:
                     amount = input("How much do you want to deposit?: ")
-                    users['account_balance'] += float(amount)
+                    user['account_balance'] += float(amount)
                     self.save_a_file(name_of_file="store.json", content=self.accounts)
                     print(f"{"==" * 24}\n{amount} has been added to your account.\n{"==" * 24}")
                     break

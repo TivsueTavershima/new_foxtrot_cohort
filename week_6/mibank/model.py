@@ -13,3 +13,4 @@ class Model:
         with open(name_of_file) as store:
             content = json.loads(store.read())
             return content
+        

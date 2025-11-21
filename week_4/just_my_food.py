@@ -32,7 +32,7 @@ def main():
             is_food = search_for_food(option)
 
             if type(is_food) == dict:
-                purchase = input(f"The price of this food is {is_food["price"]}. Do you want to buy it? (y/n):")
+                purchase = input(f"The price of this food is {is_food["price"]}.y\nDo you want to buy it? (y/n):")
 
                 if purchase == "y":
                     bill = bill + float(is_food["price"])
@@ -49,5 +49,3 @@ def main():
                 time.sleep(4)
 
 main() # Running the program
-
- 
